@@ -1,6 +1,5 @@
 import * as actionTypes from "../actions";
 import noteServices from "../../services/notes";
-import { act } from "react-dom/cjs/react-dom-test-utils.production.min";
 
 const reducer = (state = [], action) => {
   switch (action.type) {
