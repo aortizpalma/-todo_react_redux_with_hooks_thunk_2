@@ -1,7 +1,11 @@
 import * as actionTypes from "../actions";
+import noteServices from "../../services/notes";
+import { act } from "react-dom/cjs/react-dom-test-utils.production.min";
 
 const reducer = (state = [], action) => {
   switch (action.type) {
+    case actionTypes.INIT_NOTES:
+      return action.data;
     case actionTypes.ADD_TODO:
       return state.concat({
         id: action.id + 1,
@@ -18,6 +22,16 @@ const reducer = (state = [], action) => {
     default:
       return state;
   }
+};
+
+export const initializeNotes = () => {
+  return async (dispatch) => {
+    const notes = await noteServices.getAll();
+    dispatch({
+      type: actionTypes.INIT_NOTES,
+      data: notes,
+    });
+  };
 };
 
 export default reducer;
