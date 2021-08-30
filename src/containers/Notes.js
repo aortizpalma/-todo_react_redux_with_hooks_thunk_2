@@ -1,16 +1,10 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-
-import * as actionTypes from "../store/actions";
+import { toggleTodo } from "../store/actions";
 
 const Notes = () => {
   const notes = useSelector((state) => state);
   const dispatch = useDispatch();
-
-  const toggleTodo = (id) => ({
-    type: actionTypes.TOGGLE_TODO,
-    id: id,
-  });
 
   return (
     <div>
