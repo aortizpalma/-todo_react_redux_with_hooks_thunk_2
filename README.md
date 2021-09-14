@@ -1,5 +1,7 @@
 # Simple ToDo app withi React, Redux, hooks and Thunk (WIP)
 
+Project from the React/Redux course at Business College Helsinki.
+
 ## Technologies used
 
 Built with:
@@ -38,10 +40,13 @@ Live page will be coming [here](https://)
 
 ## Authors and acknowledgment
 
-Alfonso Ortiz Palma Junco
+Course instructor:
 
-- GitHub @aortizpalma
-- [LinkedIn](https://www.linkedin.com/in/ortizpalma/)
+- Margit Tennosaar [GitHub](https://github.com/margittennosaa)
+
+- Alfonso Ortiz Palma Junco
+  - GitHub @aortizpalma
+  - [LinkedIn](https://www.linkedin.com/in/ortizpalma/)
 
 ```
 
